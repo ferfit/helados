@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+.helado{
+	width: 40%;
+    transition: transform 500ms;
+}
+
+.timeline li {
+		list-style: none;
+}
+
+.timeline > li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #d84029;
+}
+.timeline > li .timeline-panel {
+   	width: 80%;
+}
+
+.cont-caracteristica{
+    border-radius: 10px;
+    transition: all 700ms;
+}
+.cont-caracteristica:hover{
+    background-color: #264653;
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.19);
+    -moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.19);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.19);
+    color: #fff;
+    transform: scale(1.1);
+}
+.cont-caracteristica:hover .helado {
+    transform: translateY(-20px);
+
+}
+
+.sobre-nosotros{
+    background-color:  #d84029;
+}
+
+.sobre-nosotros p{
+    color: #fff;
+}
+
+.se-parte{
+    height: 400px;
+    background-image: url(../img/se-parte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px){
+
+	.timeline li {
+		padding-bottom: 150px;
+	}
+	.timeline > li .timeline-image {
+ 	position: absolute;
+   	left: 50%;
+    width: 150px;
+	height: 150px;
+	margin-left: -75px;
+   	margin-bottom: 50px;
+	}
+	
+	.timeline > li .timeline-panel {
+    width: 40%;
+	}
+
+	.inverted{
+		position: relative;
+		left: 60%;
+	}
+
+	.timeline::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color:#fff;
+	}
+
+}
+
+
+@media (min-width: 992px){
+	.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+	}
+	
+
+}
